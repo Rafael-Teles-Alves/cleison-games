@@ -1,0 +1,125 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo e fundo */
+body {
+  font-family: 'Arial', sans-serif;
+  background: #121212;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Container Principal */
+.linktree-container {
+  text-align: center;
+  max-width: 400px;
+  margin-top: 50px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  box-shadow: 0 0 50px rgba(255, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+/* Seção de Cabeçalho */
+.header {
+  margin-bottom: 30px;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 30px rgba(255, 0, 0, 0.7);
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  color: #ffcc00; /* Amarelo Gamer */
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #ff6666;
+  opacity: 0.9;
+}
+
+/* Links */
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.link {
+  display: block;
+  text-decoration: none;
+  background: #00bcd4; /* Azul Neon */
+  color: white;
+  padding: 12px 25px;
+  margin: 10px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 188, 212, 0.5);
+}
+
+.link:hover {
+  background: #1de9b6; /* Verde Neon */
+  transform: scale(1.05); /* Aumenta o botão suavemente */
+  box-shadow: 0 8px 30px rgba(0, 188, 212, 0.6);
+}
+
+.link:active {
+  transform: scale(1); /* Restaura ao clicar */
+}
+
+/* Botão de Chamada à Ação */
+.cta-section {
+  margin-top: 30px;
+}
+
+.cta-button {
+  background: #ff4081; /* Rosa Neon */
+  color: white;
+  padding: 12px 30px; /* Ajustado o tamanho do botão */
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 1.3rem; /* Ajustado o tamanho da fonte */
+  font-weight: bold;
+  box-shadow: 0 10px 30px rgba(255, 64, 129, 0.3);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #e50060;
+  transform: scale(1.05); /* Tamanho do botão ao passar o mouse */
+}
+
+.cta-button:active {
+  transform: scale(1); /* Restaura ao clicar */
+}
+
+/* Efeitos de Hover e Transições */
+.link:active, .cta-button:active {
+  transform: scale(1);
+}
